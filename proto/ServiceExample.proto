@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+//Proto 文件的邏輯命名空間。
+package ServiceExample;
+
+// 前面部分（proto）：表示 Go 文件的模組路徑或所在的包路徑（相對於 Go 模組根目錄）。
+// 後面部分（ServiceExample）：表示生成的 Go 文件中使用的實際 Go 包名稱。
+option go_package = "/proto;ServiceExample";
+
+// 定義消息
+message HelloRequest {
+  string name = 1; // 用戶名
+}
+
+message HelloResponse {
+  string message = 1; // 返回消息
+}
+
+// WebSocket 消息格式
+message ChatMessage {
+  string sender = 1;
+  string content = 2;
+}
+
