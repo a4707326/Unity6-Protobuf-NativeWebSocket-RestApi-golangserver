@@ -1,6 +1,6 @@
 # 專案名稱
 
-Unity6 + Protobuf + NativeWebSocket + RestApi + golang sever
+Unity6 + Protobuf + NativeWebSocket + RestApi + golang server
 
 ## 描述
 簡單實驗性質的連線案例 ，可傳遞資料並print出結果
